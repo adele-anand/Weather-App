@@ -1,7 +1,19 @@
 :root{
-  --c1:deepSkyBlue;
-  --c2:gold;
-  --c3:indianred;
+  --c1:lightskyblue;
+  --c2:blanchedalmond;
+  --c3:steelblue;
+  --c4: rgb(70, 110, 143);
+}
+
+*{
+  outline: none;
+}
+
+html, body{
+  height: 100%;
+  margin: 0;
+  overflow: hidden;
+  font-family:'DM Sans','Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 nav{
@@ -19,18 +31,23 @@ nav img{
 }
 
 aside{
-  width: 20%;
+  width: 15%;
   background-color: var(--c3);
 }
 
 aside button{
   width: 100%;
   background-color: var(--c3);
+  border: none;
+}
+
+aside button:hover, aside button:active{
+  background-color: var(--c4);
 }
 
 main{
   background-color: var(--c2);
-  width: 80%;
+  width: 85%;
 }
 
 .container{
