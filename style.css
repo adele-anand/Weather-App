@@ -54,6 +54,7 @@ aside button{
   width: 100%;
   background-color: var(--c3);
   border: none;
+  font-family: 'DM Sans', 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 aside button:hover, aside button:active{
@@ -63,7 +64,7 @@ aside button:hover, aside button:active{
 main{
   /* background-color: var(--c2); */
   width: 85%;
-  background-image: url("/sun-3588618_1280.jpg");
+  background-image: url("/imgs/sun-3588618_1280.jpg");
   background-color: #cccccc;
   background-repeat: no-repeat;
   background-size: cover;
@@ -73,4 +74,48 @@ main{
   display: flex;
   width: 100%;
   height: 100%;
+}
+
+.box{
+  background-color: rgba(255, 255, 255, 0.3);
+  margin: 1rem;
+  border-radius: 10px;
+  display: grid;
+}
+
+#today-temp{
+  width:fit-content;
+  grid-template-columns: auto auto auto;
+}
+
+#today-temp h4{
+  margin: 0;
+  padding: 1rem 1rem 0 1rem;
+}
+
+#today-temp p{
+  padding: 0 1rem 0 1rem;
+}
+
+#current-temp{
+  font-size: 30pt;
+  grid-row-start: 2;
+  margin:0;
+}
+
+#current-status{
+  /* align-self:center; */
+  grid-row-start: 3;
+  grid-row-end: 6;
+  justify-self: center;
+  width:7rem;
+}
+
+#temp-message{
+  grid-column: 2/span 2;
+  margin: none;
+}
+
+#status-message{
+  grid-column: 2;
 }
