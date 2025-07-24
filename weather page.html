@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Weather</title>
-    <link rel="icon" type="image/x-icon" href="https://www.freeiconspng.com/uploads/weather-icon-png-5.png">
+    <link rel="icon" type="image/x-icon" href="https://img.icons8.com/color/768/partly-cloudy-rain--v1.png">
     <link rel="stylesheet" href="./style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -16,7 +16,7 @@
     <nav>
       <div class="logo">
         <h1>Weather</h1>
-        <img src="https://www.freeiconspng.com/uploads/weather-icon-png-5.png">
+        <img src="https://img.icons8.com/color/768/partly-cloudy-rain--v1.png">
       </div>
       <div class="time">
         <h2>11:00 AM</h2>
@@ -29,17 +29,18 @@
         <button>Adelaide, SA</button>
         <button>Melbourne, VIC</button>
         <button>Sydney, NSW</button>
-        <button>+ New</button>
+        <button>+ New Location</button>
       </aside>
       <main>
         <div class="box" id="today-temp">
-            <h4>Current Temperature:</h4>
+          <div class="iconandtemp">
+            <img id="current-icon" src="https://img.icons8.com/color/768/partly-cloudy-day--v1.png">
             <p id="current-temp">18°C</p>
-            <img id="current-status" src="imgs/icons8-partly-cloudy-day-100.png">
-            <h4>Max:</h4><p>20°C</p>
-            <h4>Min:</h4><p>9°C</p>
-            <p id="temp-message">2°C warmer than yesterday</p>
-            <p id="status-message">Partly Cloudy</p>
+          </div>
+          <div class="max"><h4>Max:</h4></div><p>20°C</p>
+          <div class="min"><img src="https://img.icons8.com/color/768/hot.png"><h4>Min:</h4></div><p>9°C</p>
+          <p id="type-message">Partly Cloudy</p>
+          <p id="temp-message">2°C warmer than yesterday</p>
         </div>
       </main>
     </div>

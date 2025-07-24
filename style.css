@@ -1,6 +1,13 @@
-:root{
+:root {
+  --c1: rgb(55, 102, 146);
+  --c2: rgba(0, 0, 0, 0.3);
+  --c3: rgb(105, 170, 214);
+  --c4: rgb(214, 225, 234);
+}
+
+.sunny{
   --c1:rgb(48, 168, 243);
-  --c2:blanchedalmond;
+  --c2:rgba(255, 255, 255, 0.3);
   --c3:rgb(119, 180, 237);
   --c4: rgb(214, 225, 234);
 }
@@ -21,28 +28,31 @@ nav{
   justify-content: space-between;
   background-color: var(--c1);
   padding: 0;
+  color: var(--c4)
 }
 
 nav img{
   height:3em;
-  margin: 0.5rem 0 0 0.5rem;
+  margin: 0.5rem 0 0.5rem 0.5rem;
 }
 
 .logo{
   display: flex;
-  margin-left: 1rem;
+  margin: 0 0 0 1rem;
   align-items: auto;
-  font-size: 16pt;
+  font-size:24pt;
+  line-height: 0.7;
 }
 
 nav h2{
-  font-size: 15pt;
+  font-size: 20pt;
   justify-self: right;
   margin: 1rem 1rem 0 0;
 }
 
 h3{
   margin-left: 1rem;
+  font-size: 20pt;
 }
 
 aside{
@@ -55,6 +65,9 @@ aside button{
   background-color: var(--c3);
   border: none;
   font-family: 'DM Sans', 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  padding: 1rem;
+  text-align: left;
+  font-size: 16pt;
 }
 
 aside button:hover, aside button:active{
@@ -62,9 +75,8 @@ aside button:hover, aside button:active{
 }
 
 main{
-  /* background-color: var(--c2); */
   width: 85%;
-  background-image: url("/imgs/sun-3588618_1280.jpg");
+  background-image: url("/imgs/bg images/partlycloudybg.jpg");
   background-color: #cccccc;
   background-repeat: no-repeat;
   background-size: cover;
@@ -77,45 +89,56 @@ main{
 }
 
 .box{
-  background-color: rgba(255, 255, 255, 0.3);
+  background-color: var(--c2);
   margin: 1rem;
   border-radius: 10px;
   display: grid;
+  padding: 1rem;
+  justify-items: left;
+  align-items: baseline;
+  gap:1rem 2rem;
 }
 
 #today-temp{
   width:fit-content;
-  grid-template-columns: auto auto auto;
-}
-
-#today-temp h4{
-  margin: 0;
-  padding: 1rem 1rem 0 1rem;
-}
-
-#today-temp p{
-  padding: 0 1rem 0 1rem;
+  grid-template-columns: 16rem 10rem 10rem;
+  grid-template-rows: 3rem 3rem 3rem;
+  color: var(--c4);
+  font-size: 20pt;
 }
 
 #current-temp{
-  font-size: 30pt;
-  grid-row-start: 2;
+  font-size: 40pt;
   margin:0;
 }
 
-#current-status{
-  /* align-self:center; */
-  grid-row-start: 3;
-  grid-row-end: 6;
+#current-icon{
   justify-self: center;
-  width:7rem;
+  width:10rem;
+}
+
+.iconandtemp{
+  display: flex;
+  align-items: center;
+  grid-row: 1/span 2;
+  align-self: center;
+  padding-top: 0.5rem;
 }
 
 #temp-message{
-  grid-column: 2/span 2;
   margin: none;
+  grid-column: 2/span 2;
+  padding: 0;
 }
 
-#status-message{
-  grid-column: 2;
+.min img{
+  width:2rem;
+}
+
+#today-temp p, h4{
+  line-height: 0rem;
+}
+
+#today-temp p:nth-of-type(3){
+  justify-self: center;
 }
