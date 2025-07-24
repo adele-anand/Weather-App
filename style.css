@@ -95,8 +95,8 @@ main{
   display: grid;
   padding: 1rem;
   justify-items: left;
-  align-items: baseline;
-  gap:1rem 2rem;
+  align-items: center;
+  gap:1rem 2.5rem;
 }
 
 #today-temp{
@@ -108,8 +108,9 @@ main{
 }
 
 #current-temp{
-  font-size: 40pt;
+  font-size: 45pt;
   margin:0;
+  font-weight: bold;
 }
 
 #current-icon{
@@ -131,8 +132,14 @@ main{
   padding: 0;
 }
 
-.min img{
-  width:2rem;
+.maxmin{
+  display: flex;
+  align-items: center;
+}
+
+.maxmin img{
+  width:3rem;
+  height:3rem;
 }
 
 #today-temp p, h4{
