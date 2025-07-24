@@ -1,8 +1,8 @@
 :root{
-  --c1:lightskyblue;
+  --c1:rgb(48, 168, 243);
   --c2:blanchedalmond;
-  --c3:steelblue;
-  --c4: rgb(70, 110, 143);
+  --c3:rgb(119, 180, 237);
+  --c4: rgb(214, 225, 234);
 }
 
 *{
@@ -20,14 +20,29 @@ nav{
   display: flex;
   justify-content: space-between;
   background-color: var(--c1);
+  padding: 0;
 }
 
 nav img{
   height:3em;
+  margin: 0.5rem 0 0 0.5rem;
 }
 
 .logo{
-  display: inline;
+  display: flex;
+  margin-left: 1rem;
+  align-items: auto;
+  font-size: 16pt;
+}
+
+nav h2{
+  font-size: 15pt;
+  justify-self: right;
+  margin: 1rem 1rem 0 0;
+}
+
+h3{
+  margin-left: 1rem;
 }
 
 aside{
@@ -46,12 +61,16 @@ aside button:hover, aside button:active{
 }
 
 main{
-  background-color: var(--c2);
+  /* background-color: var(--c2); */
   width: 85%;
+  background-image: url("/sun-3588618_1280.jpg");
+  background-color: #cccccc;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .container{
-  display:flex;
+  display: flex;
   width: 100%;
   height: 100%;
 }
